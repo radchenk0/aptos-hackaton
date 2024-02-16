@@ -1,0 +1,42 @@
+{
+  "name": "aptos-hackaton",
+  "version": "1.0.0",
+  "description": "Aptos RaNd0M Hack project",
+  "keywords": [
+    "aptos",
+    "random",
+    "hackaton"
+  ],
+  "author": "Mikhail Radchenko <m.radchenko1990@gmail.com>",
+  "contributors": [
+    "Mikhail Radchenko <m.radchenko1990@gmail.com>",
+    "Evheniy Bordiuk <ev.bordiuk@gmail.com>"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radchenk0/aptos-hackaton.git"
+  },
+  "scripts": {
+    "client": "cd client && yarn dev",
+    "start": "concurrently \"yarn run client\"",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@aptos-labs/ts-sdk": "^1.7.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.2",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.56.0",
+    "husky": "^9.0.11",
+    "pinst": "^3.0.0",
+    "prettier": "^3.2.5"
+  },
+  "packageManager": "yarn@1.22.19",
+  "volta": {
+    "node": "18.18.0",
+    "yarn": "1.22.19"
+  }
+}

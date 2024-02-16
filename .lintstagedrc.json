@@ -1,0 +1,4 @@
+{
+  "client/src/**/*.ts|tsx": ["eslint --fix"],
+  "client/src/**/*": ["prettier --write"]
+}
